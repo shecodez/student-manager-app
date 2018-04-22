@@ -1,0 +1,25 @@
+{
+  "name": "student-manager-server",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.16.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.1",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^8.1.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.13.9",
+    "nodemailer": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "build": "babel . --ignore node_modules,build --out-dir build",
+    "start": "nodemon -r babel-register src/index.js",
+    "start:prod": "node build/src/index.js"
+  }
+}
