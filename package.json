@@ -4,7 +4,7 @@
 	"private": true,
 	"dependencies": {
 		"antd": "^3.4.5",
-		"dotenv": "^5.0.1",
+
 		"firebase": "^4.13.1",
 		"immutability-helper": "^2.7.0",
 		"lodash": "^4.17.10",
@@ -31,6 +31,7 @@
 		"eject": "react-scripts eject"
 	},
 	"devDependencies": {
+		"dotenv": "^5.0.1",
 		"babel-plugin-import": "^1.7.0",
 		"react-app-rewire-less": "^2.1.1",
 		"react-app-rewired": "^1.5.2",
