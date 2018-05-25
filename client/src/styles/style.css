@@ -1,0 +1,240 @@
+html {
+  height: 100%; }
+
+body > #root > .App {
+  min-height: 100%;
+  overflow: hidden; }
+
+.centered {
+  text-align: center; }
+
+.isDisabled {
+  cursor: not-allowed !important;
+  opacity: 0.5 !important; }
+
+.isDisabled > a {
+  color: currentColor;
+  display: inline-block;
+  /* For IE11/ MS Edge bug */
+  pointer-events: none;
+  text-decoration: none; }
+
+.app-header {
+  box-shadow: 0 2px #f0f1f2;
+  z-index: 9;
+  background: '#fff';
+  padding: 0 24px; }
+  .app-header .app-title {
+    float: left; }
+    .app-header .app-title a {
+      text-decoration: none;
+      line-height: 64px;
+      font-size: 21px;
+      display: inline-block; }
+    .app-header .app-title .trigger {
+      font-size: 18px;
+      line-height: 64px;
+      padding-right: 8px;
+      cursor: pointer;
+      transition: color 0.3s; }
+      .app-header .app-title .trigger:hover {
+        color: #1890ff; }
+  .app-header .app-menu {
+    float: right;
+    margin-top: -1px; }
+    .app-header .app-menu .profile-dropdown-menu {
+      min-width: 180px; }
+    .app-header .app-menu .profile-menu .user-full-name-info {
+      font-size: 17px;
+      font-weight: 600;
+      color: rgba(0, 0, 0, 0.85); }
+
+.app-sidebar .logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px; }
+
+.app-sidebar a {
+  color: rgba(255, 255, 255, 0.65);
+  transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .app-sidebar a:hover {
+    color: #fff; }
+
+.app-sidebar .ant-menu-item-selected a {
+  color: #fff; }
+
+.crud-actions button {
+  border: transparent;
+  text-transform: uppercase;
+  padding: 0;
+  margin-right: 15px;
+  background: transparent; }
+  .crud-actions button:hover {
+    background: transparent; }
+
+.crud-actions .edit-btn i,
+.crud-actions .list-btn i,
+.crud-actions .refresh-btn i {
+  margin-right: 8px; }
+
+.main-layout .main-content.auth-false {
+  margin: 0; }
+
+.main-layout .main-content.auth-true {
+  margin: 0 16px; }
+
+.login-page .picture {
+  background: orange;
+  height: 100vh; }
+
+.error-page {
+  height: 100vh; }
+  .error-page .content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .error-page .content .title {
+      font-size: 12rem;
+      margin-bottom: 0; }
+    .error-page .content .desc {
+      font-size: 2em; }
+    .error-page .content .go-back-btn {
+      text-transform: uppercase; }
+
+.course-list button {
+  text-transform: uppercase; }
+
+.course-list .h-actions a,
+.course-list .h-actions button {
+  float: right;
+  border: transparent;
+  text-transform: uppercase; }
+
+.course-list .course-card {
+  margin: 20px 0; }
+  .course-list .course-card .course-subject {
+    text-transform: uppercase; }
+  .course-list .course-card .course-name {
+    font-size: 24px;
+    margin-top: 8px; }
+  .course-list .course-card .course-credits {
+    font-weight: bold; }
+  .course-list .course-card .actions {
+    float: right; }
+
+.course-details button {
+  text-transform: uppercase; }
+
+.course-details .course-subject {
+  text-transform: uppercase; }
+
+.course-details .course-name {
+  font-size: 24px;
+  margin-top: 8px; }
+
+.course-details .course-credits {
+  font-weight: bold; }
+
+.course-details .actions {
+  float: right; }
+
+.edit-course button,
+.new-course button {
+  text-transform: uppercase; }
+
+.edit-course .actions,
+.new-course .actions {
+  float: right; }
+
+.student-details .actions {
+  float: right; }
+
+.student-details .student-name {
+  font-size: 24px;
+  margin-top: 8px;
+  display: inline-block; }
+
+.student-details .status {
+  color: #ddd;
+  font-weight: bold; }
+  .student-details .status.ACTIVE {
+    color: green; }
+  .student-details .status.PENDING {
+    color: yellow; }
+  .student-details .status.INACTIVE {
+    color: red; }
+
+.edit-student button,
+.new-student button {
+  text-transform: uppercase; }
+
+.edit-student .actions,
+.new-student .actions {
+  float: right; }
+
+.student-list .status {
+  font-weight: bold; }
+
+.student-list .status.status-PENDING {
+  color: #fec324; }
+
+.student-list .status.status-ACTIVE {
+  color: #33cd7b; }
+
+.student-list .status.status-INACTIVE {
+  color: #fe464d; }
+
+.account .account-avatar {
+  width: 220px;
+  height: 220px;
+  margin: auto;
+  display: block; }
+
+.account .account-name {
+  font-size: 24px;
+  margin-top: 8px; }
+
+.account .account-email {
+  display: inline-block; }
+
+.account-details .actions {
+  float: right; }
+
+.edit-account button,
+.new-account button {
+  text-transform: uppercase; }
+
+.edit-account .actions,
+.new-account .actions {
+  float: right; }
+
+.role-list .role {
+  font-weight: bold; }
+
+.role-list .role.active-0 {
+  color: #fe464d; }
+
+.role-list .role.active-1 {
+  color: #33cd7b; }
+
+.permission-details button {
+  text-transform: uppercase; }
+
+.permission-details .permission-name {
+  font-size: 24px;
+  margin-top: 8px; }
+
+.permission-details .actions {
+  float: right; }
+
+.audit-log .actor-role {
+  float: left; }
+
+.audit-log .actor-info {
+  display: inline-block;
+  margin-left: 0.8rem;
+  line-height: 0.95rem; }
+  .audit-log .actor-info a {
+    display: block; }

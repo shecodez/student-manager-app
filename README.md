@@ -1,1 +1,3 @@
-# student-manager
+# Student Manager Application
+
+Manage all your student details, enroll students into courses, track their academic progress, and more...

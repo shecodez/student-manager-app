@@ -1,0 +1,44 @@
+.app-header {
+	box-shadow: 0 2px #f0f1f2;
+	z-index: 9;
+	background: '#fff';
+	padding: 0 24px;
+
+	.app-title {
+		float: left;
+
+		a {
+			text-decoration: none;
+			line-height: 64px;
+			font-size: 21px;
+			display: inline-block;
+		}
+
+		.trigger {
+			font-size: 18px;
+			line-height: 64px;
+			padding-right: 8px;
+			cursor: pointer;
+			transition: color 0.3s;
+
+			&:hover {
+				color: #1890ff;
+			}
+		}
+	}
+
+	.app-menu {
+		float: right;
+		margin-top: -1px;
+
+		.profile-dropdown-menu {
+			min-width: 180px;
+		}
+
+		.profile-menu .user-full-name-info {
+			font-size: 17px;
+			font-weight: 600;
+			color: rgba(0,0,0,0.85);
+		}
+	}
+}

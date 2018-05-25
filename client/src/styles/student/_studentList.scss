@@ -1,0 +1,14 @@
+.student-list {
+	.status {
+		font-weight: bold;
+	}
+	.status.status-PENDING {
+		color: $yellow;
+	}
+	.status.status-ACTIVE {
+		color: $green;
+	}
+	.status.status-INACTIVE {
+		color: $red;
+	}
+}

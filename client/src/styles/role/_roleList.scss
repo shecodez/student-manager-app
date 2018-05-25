@@ -1,0 +1,11 @@
+.role-list {
+	.role {
+		font-weight: bold;
+	}
+	.role.active-0 {
+		color: $red;
+	}
+	.role.active-1 {
+		color: $green;
+	}
+}

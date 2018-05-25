@@ -1,0 +1,20 @@
+.crud-actions {
+	button {
+		border: transparent;
+		text-transform: uppercase;
+		padding: 0;
+		margin-right: 15px;
+		background: transparent;
+		&:hover {
+			background: transparent;
+		}
+	}
+
+	.edit-btn,
+	.list-btn,
+	.refresh-btn {
+		i {
+			margin-right: 8px;
+		}
+	}
+}

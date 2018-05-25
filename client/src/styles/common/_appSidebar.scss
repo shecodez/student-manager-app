@@ -1,0 +1,22 @@
+.app-sidebar {
+	.logo {
+		height: 32px;
+		background: rgba(255, 255, 255, 0.2);
+		margin: 16px;
+	}
+
+	a {
+		color: rgba(255, 255, 255, 0.65);
+
+		&:hover {
+			color: #fff;
+		}
+		transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	}
+
+	.ant-menu-item-selected {
+		a {
+			color: #fff;
+		}
+	}
+}

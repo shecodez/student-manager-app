@@ -1,0 +1,13 @@
+.audit-log {
+	.actor-role {
+		float: left;
+	}
+	.actor-info {
+		display: inline-block;
+		margin-left: 0.8rem;
+		a {
+			display: block;
+		}
+		line-height: 0.95rem;
+	}
+}

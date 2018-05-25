@@ -1,0 +1,63 @@
+//@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
+
+html {
+	height: 100%;
+}
+
+body > #root > .App {
+	min-height: 100%;
+	overflow: hidden;
+	//font-family: "Josefin Sans", sans-serif;
+}
+
+.centered {
+	text-align: center;
+}
+
+.isDisabled {
+	cursor: not-allowed !important;
+	opacity: 0.5 !important;
+}
+
+.isDisabled > a {
+	color: currentColor;
+	display: inline-block; /* For IE11/ MS Edge bug */
+	pointer-events: none;
+	text-decoration: none;
+}
+
+//-- vars ---------------------------------------------
+$red: #fe464d;
+$green: #33cd7b;
+$blue: #0f97f9;
+$yellow: #fec324;
+//-----------------------------------------------------
+
+//-- common -------------------------------------------
+@import './common/appHeader';
+@import './common/appSidebar';
+@import './common/crudActions';
+@import './common/mainLayout';
+//-- pages --------------------------------------------
+@import './pages/homePage';
+@import './pages/loginPage';
+@import './pages/errorPage';
+//-- course -------------------------------------------
+@import './course/courseList';
+@import './course/courseDetails';
+@import './course/editCourse';
+//-- student ------------------------------------------
+@import './student/studentDetails';
+@import './student/editStudent';
+@import './student/studentList';
+//-- account ------------------------------------------
+@import './account/account';
+@import './account/accountDetails';
+@import './account/editAccount';
+//-- role ---------------------------------------------
+@import './role/roleList';
+//-- permission ----------------------------------------
+@import './permission/permissionDetails';
+//-- audit ---------------------------------------------
+@import './audit/auditLog';
+//------------------------------------------------------
