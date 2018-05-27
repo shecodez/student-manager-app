@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { resetPassword } from '../../actions/auth';
+import { notification } from 'antd';
 
 import ErrorMessage from '../common/ErrorMessage';
 
@@ -31,14 +32,22 @@ class PasswordResetForm extends React.Component {
 	handleSubmit = e => {
 		e.preventDefault();
 
-		this.props
+		/* this.props
 			.resetPassword(this.state.email)
 			.then(() => {
 				this.setState(() => ({ ...INITIAL_STATE }));
+				notification.open({
+					message: 'Success',
+					description: 'Instructions have been sent to the email you provided.'
+				});
 			})
 			.catch(err => {
 				this.setState(byPropKey('error', err));
-			});
+			}); */
+		notification.open({
+			message: 'Info',
+			description: 'This feature is unavaliable in the demo.'
+		});
 	};
 
 	render() {

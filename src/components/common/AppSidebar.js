@@ -30,7 +30,7 @@ class AppSidebar extends React.Component {
 			<Layout.Sider
 				width={240}
 				breakpoint="lg"
-				//collapsedWidth="0"
+				// collapsedWidth="0"
 				trigger={null}
 				collapsible
 				collapsed={this.props.collapsed}

@@ -19,6 +19,93 @@ body > #root > .App {
   pointer-events: none;
   text-decoration: none; }
 
+.dashboard {
+  position: relative; }
+  .dashboard .ant-card {
+    border-radius: 0;
+    margin-bottom: 24px; }
+    .dashboard .ant-card:hover {
+      box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.05); }
+  .dashboard .ant-card-body {
+    overflow-x: hidden; }
+  .dashboard .widget .add-widget {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: pointer; }
+    .dashboard .widget .add-widget h2 {
+      color: #fff;
+      margin-top: 8px; }
+
+.number-card {
+  padding: 32px;
+  margin-bottom: 24px !important;
+  cursor: pointer; }
+  .number-card .icon {
+    font-size: 54px;
+    float: left; }
+  .number-card .content {
+    width: 100%;
+    padding-left: 78px; }
+    .number-card .content .title {
+      line-height: 16px;
+      font-size: 16px;
+      margin-bottom: 8px;
+      height: 16px; }
+    .number-card .content .number {
+      line-height: 32px;
+      font-size: 24px;
+      height: 32px;
+      margin-bottom: 0; }
+
+.line-chart .title {
+  margin-left: 32px;
+  font-size: 16px; }
+
+.recents-table .ant-table-thead > tr > th {
+  background: #fff; }
+
+.comments-table .avatar {
+  width: 48px;
+  height: 48px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  background: #f8f8f8;
+  display: inline-block; }
+  .comments-table .avatar .ant-avatar-string {
+    font-size: 2em;
+    line-height: 48px;
+    font-weight: 200; }
+
+.comments-table .content {
+  font-size: 13px;
+  text-align: left;
+  color: #757575; }
+
+.comments-table .date {
+  color: #a3a3a3;
+  line-height: 30px;
+  font-size: 13px; }
+
+.comments-table .date-row {
+  display: flex;
+  justify-content: space-between; }
+
+.comments-table .name {
+  font-size: 14px;
+  color: #474747;
+  text-align: left; }
+
+.comments-table .avatar-column {
+  vertical-align: top; }
+
+.area-chart .title {
+  margin-left: 32px;
+  font-size: 16px; }
+
 .app-header {
   box-shadow: 0 2px #f0f1f2;
   z-index: 9;
@@ -102,6 +189,30 @@ body > #root > .App {
       font-size: 2em; }
     .error-page .content .go-back-btn {
       text-transform: uppercase; }
+
+.landing-page {
+  height: 85vh;
+  background-image: linear-gradient(to right bottom, rgba(76, 216, 255, 0.8), rgba(30, 108, 217, 0.8)), url("https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg");
+  background-size: cover;
+  background-position: top;
+  position: relative; }
+  .landing-page .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .landing-page .main-heading {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 400;
+    letter-spacing: 5px; }
+  .landing-page .sub-heading {
+    display: block;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+    margin-bottom: 1em; }
 
 .course-list button {
   text-transform: uppercase; }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 // import { withRouter } from 'react-router-dom';
-import { Layout } from 'antd';
+import { Layout, BackTop } from 'antd';
 
 import AppHeader from './AppHeader';
 import AppFooter from './AppFooter';
@@ -26,10 +26,12 @@ class MainLayout extends React.Component {
 	};
 
 	render() {
-		const { page, breadcrumbs, authenticated } = this.props;
+		const { page, breadcrumbs, authenticated, bgColor, padding } = this.props;
 
 		return (
 			<Layout className="main-layout">
+				<BackTop />
+
 				{authenticated && (
 					<AppSidebar
 						current={page}
@@ -41,7 +43,13 @@ class MainLayout extends React.Component {
 					<AppHeader toggle={this.toggle} collapsed={this.state.collapsed} />
 					<Layout.Content className={`main-content auth-${authenticated}`}>
 						{authenticated && <Breadcrumbs breadcrumbs={breadcrumbs} />}
-						<div style={{ padding: 24, background: '#fff', minHeight: 360 }}>
+						<div
+							style={{
+								padding: padding || 24,
+								background: bgColor || '#fff',
+								minHeight: 360
+							}}
+						>
 							{this.props.children}
 						</div>
 					</Layout.Content>

@@ -71,7 +71,7 @@ function ProfileDropdownMenu(props) {
 	const dropdownMenu = (
 		<Menu onClick={props.handleMenuClick} className="profile-dropdown-menu">
 			<Menu.Item key="user-info" className="dropdown-item" disabled>
-				<div className="user-full-name-info">{`FirstName LastName`}</div>
+				<div className="user-full-name-info">{props.user.displayName}</div>
 				<div className="email-info">{props.user.email}</div>
 			</Menu.Item>
 			<Menu.Divider />
@@ -101,7 +101,9 @@ function ProfileDropdownMenu(props) {
 }
 
 function mapStateToProps(state) {
-	return { user: state.user };
+	return {
+		user: state.user
+	};
 }
 
 export default withRouter(connect(mapStateToProps, { logout })(AppHeader));

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import _ from 'lodash';
-import { Card, Row, Col, BackTop, Button } from 'antd';
+import { Card, Row, Col, Button } from 'antd';
 import { deleteCourse } from '../../actions/courses';
 
 import CRUDActions from '../common/CRUDActions';
@@ -53,7 +53,7 @@ class CourseList extends React.Component {
 		const routes = [
 			{
 				path: '/',
-				breadcrumbName: 'home'
+				breadcrumbName: 'SMApp'
 			},
 			{
 				path: 'courses',
@@ -62,10 +62,8 @@ class CourseList extends React.Component {
 		];
 
 		return (
-			<MainLayout page={'/courses'} breadcrumbs={routes}>
+			<MainLayout page={'/courses'} breadcrumbs={routes} bgColor="transparent">
 				<div className="course-list">
-					<BackTop />
-
 					<Row>
 						<Col xs={{ span: 20, offset: 2 }} lg={{ span: 14, offset: 5 }}>
 							{courses.length === 0 ? noDataMsg : listCourses}

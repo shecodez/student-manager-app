@@ -61,7 +61,7 @@ class Profile extends React.Component {
 function mapStateToProps(state) {
 	return {
 		user: state.user,
-		account: state.accounts['ovrLPLCk9SOjjT7ao0XtUxiO06B3']
+		account: state.accounts[state.user.uid]
 	};
 }
 

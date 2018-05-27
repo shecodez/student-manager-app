@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { createAccount } from '../../actions/auth';
+// import { createAccount } from '../../actions/auth';
 import { Row, Col, notification } from 'antd';
 
 import AccountForm from '../forms/AccountForm';
@@ -13,7 +13,11 @@ class NewAccount extends React.Component {
 	};
 
 	submit = data => {
-		this.props
+		notification.open({
+			message: 'Info',
+			description: 'This feature is unavaliable in the demo.'
+		});
+		/* this.props
 			.createAccount(data)
 			.then(() => {
 				// TODO: reset form?
@@ -25,7 +29,7 @@ class NewAccount extends React.Component {
 			})
 			.catch(err => {
 				this.setState({ error: err.message });
-			});
+			}); */
 	};
 
 	render() {
@@ -61,4 +65,4 @@ class NewAccount extends React.Component {
 	}
 }
 
-export default connect(null, { createAccount })(NewAccount);
+export default connect(null, {})(NewAccount);

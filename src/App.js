@@ -31,8 +31,8 @@ import EditPermission from './components/permission/EditPermission';
 
 import AuditLog from './components/audit/AuditLog';
 
-import NotFound from './components/pages/NotFound';
-// import PrivateRoute from './components/common/PrivateRoute';
+import NotFound from './components/pages/error/NotFound';
+import PrivateRoute from './components/common/PrivateRoute';
 
 class App extends React.Component {
 	render() {
@@ -42,33 +42,45 @@ class App extends React.Component {
 					<Route exact path="/" component={HomePage} />
 					<Route exact path="/login" component={LoginPage} />
 					<Route exact path="/forgot-password" component={PasswordReset} />
-					<Route exact path="/profile" component={Profile} />
 
-					<Route exact path="/students" component={StudentList} />
-					<Route exact path="/students/new" component={NewStudent} />
-					<Route exact path="/students/:id" component={StudentDetails} />
-					<Route exact path="/students/:id/edit" component={EditStudent} />
+					<PrivateRoute exact path="/students" component={StudentList} />
+					<PrivateRoute exact path="/students/new" component={NewStudent} />
+					<PrivateRoute exact path="/students/:id" component={StudentDetails} />
+					<PrivateRoute
+						exact
+						path="/students/:id/edit"
+						component={EditStudent}
+					/>
 
-					<Route exact path="/accounts" component={AccountList} />
-					<Route exact path="/accounts/new" component={NewAccount} />
-					<Route exact path="/accounts/:id" component={AccountDetails} />
-					<Route exact path="/accounts/:id/edit" component={EditAccount} />
+					<PrivateRoute exact path="/profile" component={Profile} />
+					<PrivateRoute exact path="/accounts" component={AccountList} />
+					<PrivateRoute exact path="/accounts/new" component={NewAccount} />
+					<PrivateRoute exact path="/accounts/:id" component={AccountDetails} />
+					<PrivateRoute
+						exact
+						path="/accounts/:id/edit"
+						component={EditAccount}
+					/>
 
-					<Route exact path="/courses" component={CourseList} />
-					<Route exact path="/courses/new" component={NewCourse} />
-					<Route exact path="/courses/:id" component={CourseDetails} />
-					<Route exact path="/courses/:id/edit" component={EditCourse} />
+					<PrivateRoute exact path="/courses" component={CourseList} />
+					<PrivateRoute exact path="/courses/new" component={NewCourse} />
+					<PrivateRoute exact path="/courses/:id" component={CourseDetails} />
+					<PrivateRoute exact path="/courses/:id/edit" component={EditCourse} />
 
-					<Route exact path="/roles" component={RoleList} />
-					<Route exact path="/permissions" component={PermissionList} />
-					<Route exact path="/permissions/:id" component={PermissionDetails} />
-					<Route
+					<PrivateRoute exact path="/roles" component={RoleList} />
+					<PrivateRoute exact path="/permissions" component={PermissionList} />
+					<PrivateRoute
+						exact
+						path="/permissions/:id"
+						component={PermissionDetails}
+					/>
+					<PrivateRoute
 						exact
 						path="/permissions/:id/edit"
 						component={EditPermission}
 					/>
 
-					<Route exact path="/audits" component={AuditLog} />
+					<PrivateRoute exact path="/audits" component={AuditLog} />
 
 					<Route component={NotFound} />
 				</Switch>

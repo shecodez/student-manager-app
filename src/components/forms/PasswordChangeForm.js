@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { changePassword } from '../../actions/auth';
-import { Form, Button, Input } from 'antd';
+import { Form, Button, Input, notification } from 'antd';
 
 import ErrorMessage from '../common/ErrorMessage';
 
@@ -44,14 +44,22 @@ class PasswordChangeForm extends React.Component {
 		const errors = this.validate(data);
 		this.setState({ errors });
 		if (Object.keys(errors).length === 0) {
-			this.props
+			/* this.props
 				.changePassword(this.state.passwordOne)
 				.then(() => {
 					this.setState(() => ({ ...INITIAL_STATE }));
+					notification.open({
+						message: 'Success',
+						description: 'Your password was successfully changed.'
+					});
 				})
 				.catch(error => {
 					this.setState(byPropKey('error', error));
-				});
+				}); */
+			notification.open({
+				message: 'Info',
+				description: 'This feature is unavaliable in the demo.'
+			});
 		}
 	};
 

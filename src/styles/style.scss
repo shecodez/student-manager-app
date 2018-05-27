@@ -33,6 +33,13 @@ $blue: #0f97f9;
 $yellow: #fec324;
 //-----------------------------------------------------
 
+//-- dashboard ----------------------------------------
+@import './dashboard/dashboard';
+@import './dashboard/components/numberCard';
+@import './dashboard/components/lineChart';
+@import './dashboard/components/recentsTable';
+@import './dashboard/components/commentsTable';
+@import './dashboard/components/areaChart';
 //-- common -------------------------------------------
 @import './common/appHeader';
 @import './common/appSidebar';
@@ -42,6 +49,7 @@ $yellow: #fec324;
 @import './pages/homePage';
 @import './pages/loginPage';
 @import './pages/errorPage';
+@import './pages/landingPage';
 //-- course -------------------------------------------
 @import './course/courseList';
 @import './course/courseDetails';

@@ -1,5 +1,4 @@
 import { combineReducers } from 'redux';
-import { reducer as formReducer } from 'redux-form';
 
 import loaded from './loading';
 import user from './user';
@@ -10,7 +9,6 @@ import roles from './roles';
 import permissions from './permissions';
 
 export default combineReducers({
-	form: formReducer,
 	loaded,
 	user,
 	accounts,

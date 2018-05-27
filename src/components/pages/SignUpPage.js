@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 //import { createAccount, getUser } from '../../actions/auth';
 import { Row, Col, Alert } from 'antd';
 
-//import RegisterForm from '../forms/RegisterForm';
+//import SignUpForm from '../forms/SignUpForm';
 
-class Register extends React.Component {
+class SignUp extends React.Component {
 	state = {
 		loading: false,
 		error: ''
@@ -43,7 +43,7 @@ class Register extends React.Component {
 				<Row>
 					<Col xs={0} sm={0} md={14} lg={14} xl={14} className="picture" />
 					<Col xs={16} sm={20} md={6} lg={6} xl={6} offset={2}>
-						<h1>Register</h1>
+						<h1>Sign Up</h1>
 						{error && (
 							<Alert
 								message="Oops, something went wrong!"
@@ -52,7 +52,7 @@ class Register extends React.Component {
 							/>
 						)}
 						<br />
-						{/*<RegisterForm submit={this.submit} />*/}
+						{/*<SignUpForm submit={this.submit} />*/}
 						<Link to="/login">Login</Link>
 					</Col>
 				</Row>
@@ -61,11 +61,11 @@ class Register extends React.Component {
 	}
 }
 
-export default Register;
+export default SignUp;
 
 /* function mapStateToProps(state) {
 	return { user: state.user };
 }
 
-export default connect(mapStateToProps, { createAccount, getUser })(Register);
+export default connect(mapStateToProps, { createAccount, getUser })(SignUp);
 */

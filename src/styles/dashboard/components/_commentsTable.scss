@@ -1,0 +1,42 @@
+.comments-table {
+	.avatar {
+		width: 48px;
+		height: 48px;
+		background-position: center;
+		background-size: cover;
+		border-radius: 50%;
+		background: #f8f8f8;
+		display: inline-block;
+		.ant-avatar-string {
+			font-size: 2em;
+			line-height: 48px;
+			font-weight: 200;
+		}
+	}
+	.content {
+		font-size: 13px;
+		text-align: left;
+		color: #757575;
+	}
+
+	.date {
+		color: #a3a3a3;
+		line-height: 30px;
+		font-size: 13px;
+	}
+
+	.date-row {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.name {
+		font-size: 14px;
+		color: #474747;
+		text-align: left;
+	}
+
+	.avatar-column {
+		vertical-align: top;
+	}
+}

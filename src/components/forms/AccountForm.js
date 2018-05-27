@@ -113,7 +113,7 @@ class AccountForm extends React.Component {
 							Select account role
 						</Select.Option>
 						{roles.map(s => (
-							<Select.Option value={s.name} key={s.name}>
+							<Select.Option value={s.name.toUpperCase()} key={s.name}>
 								{s.name.toUpperCase()}
 							</Select.Option>
 						))}
